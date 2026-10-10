@@ -7,7 +7,7 @@ app = func.FunctionApp()
 
 @app.timer_trigger(schedule="0 * * * * *", arg_name="myTimer", run_on_startup=False,
               use_monitor=False) 
-def extract_chamado(myTimer: func.TimerRequest) -> None:
+def extr     act_chamado(myTimer: func.TimerRequest) -> None:
     logging.info('tabela chamado')
     
     sql_server = os.getenv("HOST")
